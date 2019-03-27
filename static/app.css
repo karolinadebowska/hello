@@ -15,10 +15,12 @@ button:hover {
     background-color: silver;
 }
 #helloname{
+	text-align:centre;
 	font-size:50px;
 }
 #hello
 {
+	text-align:centre;
 	font-size: 50px;
   	margin:200px;
 	color:red;
