@@ -1,0 +1,19 @@
+{% include "header.html"%}
+<!---->
+	<h1 align="left" id="hello">{{hello}}</h1>
+	<h1 align="right" id="helloname"> {{hello_data["name"]}} </h1>
+
+  {%for lang in language %}
+    <button onclick="{{lang}}()">{{lang}}</button>
+  {%endfor%}
+
+    <script>
+      {%for x in range (0,20) %}
+	     function {{language[x]}}() {
+	        document.getElementById("hello").style.color = "{{font[x]}}";
+          document.getElementsByTagName("BODY")[0].style.backgroundColor="{{background[x]}}";
+	    }
+      {%endfor%}
+
+</script>
+{% include "footer.html"%}
